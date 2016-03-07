@@ -1,0 +1,38 @@
+{
+  "name": "Server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "respository": {
+    "type": "git",
+    "url": "https://github.com/AsadAzizRajput/sellmenapp"
+  },
+  "engines": {
+    "node": "4.1.1"
+  },
+  "dependencies": {
+    "angular-animate": "^1.4.8",
+    "angular-aria": "^1.4.8",
+    "angular-material": "^1.0.2",
+    "angular-ui-router": "^0.2.15",
+    "body-parser": "^1.14.2",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "express-static": "^1.0.3",
+    "firebase": "^2.3.2",
+    "mongoose": "^4.3.4",
+    "node-localstorage": "^1.1.2",
+    "q": "^1.4.1"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}

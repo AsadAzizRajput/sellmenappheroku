@@ -1,0 +1,46 @@
+<div ng-controller="dashboardController">
+
+
+
+    <div class="col-md-4">
+
+
+    <button type="button" class="btn btn-success" ng-click="addCompany()">Add Company</button>
+    <button type="button" class="btn btn-success" ui-sref="addsellmen">Add Sales Men</button>
+    <button type="button" class="btn btn-success" ui-sref="orders">See Orders</button>
+</div>
+
+
+
+
+    <br />
+<br />
+<br />
+<div class="table-responsive">
+  <table class="table" >
+    <tr class="active
+    "><th colspan="2" style="text-align:center">Salesmen</th></tr>
+    
+<tr>
+    <td>Name</td>
+    <td>Email</td>
+</tr>
+
+    <tr ng-repeat="all in Alluser">
+        <td><a href="www.google.com">{{all.FirstName}}</a></td>
+        <td>{{all.Email}}</td>
+    </tr>
+      <tr ng-repeat="order in orders">
+          <td>{{order.ClientName}}</td>
+      </tr>
+  </table>
+</div>
+    {{order.ClientName}}
+
+
+
+
+
+
+
+</div>

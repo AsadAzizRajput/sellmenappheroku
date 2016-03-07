@@ -1,0 +1,44 @@
+<div class="col-md-4">
+       <button type="button" class="btn btn-success" ui-sref="addsellmen">Back</button>
+</div>
+
+
+
+
+<br />
+<br />
+<br />
+<!--<div class="table-responsive">-->
+    <!--<table class="table" >-->
+       <!---->
+        <!--<tr ng-repeat="order in orders">-->
+            <!--<td>ClienName:{{order.ClientName}}</td>-->
+            <!--<td>{{order.OrderName}}</td>-->
+        <!--</tr>-->
+    <!--</table>-->
+<h2>Orders</h2>
+    <table class="table table-condensed">
+        <tr>
+            <th>Sellmenname</th>
+            <th>OrderName</th>
+            <th>OrderQuantity</th>
+            <th>Email</th>
+            <th>Action On Order</th>
+        </tr>
+
+        <tbody>
+        <tr ng-repeat="order in orders">
+            <td >{{order.ClientName}}</td>
+            <td>{{order.OrderName}}</td>
+            <td>{{order.Quantity}}</td>
+            <td>{{order.Email}}</td>
+            <td><button type="button" class="btn btn-success" ng-click="orderComplete(order)">Complete</button>
+                <button type="button" class="btn btn-success" ui-sref="addsellmen">Deny</button>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+</div>
