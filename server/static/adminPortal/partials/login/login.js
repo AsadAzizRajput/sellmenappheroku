@@ -8,7 +8,7 @@ app.controller('loginController',function($scope,$http,$state){
 	}
 	$scope.attempLogin=function()
 	{
-		//console.log($scope.user);
+		console.log($scope.user);
 		$http.post("/api/login",{data:$scope.user})
 		.success(function(response){
 			console.log("res"+response);
