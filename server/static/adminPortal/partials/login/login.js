@@ -27,7 +27,7 @@ app.controller('loginController',function($scope,$http,$state){
 		})
 		.error(function(err){
 
-			alert("sadas");
+			//alert("sadas");
 			console.log(err);
 		});
 	};
