@@ -1,6 +1,6 @@
  angular.module('starter')
 
-app.controller('dashboardController',function($scope,MyService,$firebaseArray){
+app.controller('dashboardController',function($scope,MyService,$firebaseArray,$state){
 
 	 $scope.Alluser = [];
 		MyService.getsellmen().then(function(res){
@@ -16,8 +16,8 @@ app.controller('dashboardController',function($scope,MyService,$firebaseArray){
 		alert("Feature Coming Soon");
 	}
 $scope.logOut =function(){
-localStorage.token=undefined;
-
+localStorage.removeItem(token)
+$state.go('login')
 }
 
 
