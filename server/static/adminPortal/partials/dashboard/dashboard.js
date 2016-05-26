@@ -16,7 +16,7 @@ app.controller('dashboardController',function($scope,MyService,$firebaseArray,$s
 		alert("Feature Coming Soon");
 	}
 $scope.logOut =function(){
-localStorage.removeItem(token)
+localStorage.removeItem('token');
 $state.go('login')
 }
 
