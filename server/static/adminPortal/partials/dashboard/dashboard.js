@@ -3,15 +3,6 @@
 app.controller('dashboardController',function($scope,MyService,$firebaseArray){
 
 	 $scope.Alluser = [];
-
-
-
-
-
-
-
-
-
 		MyService.getsellmen().then(function(res){
 			$scope.Alluser = res.userAll;
 			//$scope.orders = res.order;
@@ -24,10 +15,13 @@ app.controller('dashboardController',function($scope,MyService,$firebaseArray){
 	  $scope.addCompany = function(){
 		alert("Feature Coming Soon");
 	}
+$scope.logOut =function(){
+localStorage.token=undefined;
+
+}
 
 
-
-
+	
 	//ref.on('child_added', function (childSnapshot, prevChildKey) {
 	//	$ionicPopup.alert({
 	//		title: 'Order Alert',
