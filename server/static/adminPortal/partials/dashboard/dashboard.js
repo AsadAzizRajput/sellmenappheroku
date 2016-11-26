@@ -1,7 +1,7 @@
  angular.module('starter')
 
 app.controller('dashboardController',function($scope,MyService,$firebaseArray,$state){
-
+$scope.title="dashboard";
 	 $scope.Alluser = [];
 		MyService.getsellmen().then(function(res){
 			$scope.Alluser = res.userAll;
