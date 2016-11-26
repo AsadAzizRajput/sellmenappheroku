@@ -1,7 +1,8 @@
 var app = angular.module('starter')
 
 app.controller('loginController',function($scope,$http,$state){
-    $scope.user={};
+    	$scope.title="In Login";
+	$scope.user={};
 	if($scope.user.email=="" && $scope.user.password=="" )
 	{
 		alert("Please Your Username And Password");
