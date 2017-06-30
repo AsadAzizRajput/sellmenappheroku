@@ -1,7 +1,7 @@
 
  {
       "name"        : "Server",
-      "script"      : "./app.js.js",
+      "script"      : "./app.js",
       "instances"   : 1,
       "merge_logs"  : true,
       "log_date_format" : "YYYY-MM-DD HH:mm Z",
